@@ -1,0 +1,90 @@
+.container {
+    width: min(100% - (var(--container-padding) * 2), var(--container-max-width));
+    margin-inline: auto;
+}
+h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+section:has(.container) ,footer:has(.container) {
+    padding-block: var(--container-padding-section);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-header);
+    color: var(--color-accent);
+}
+body {
+    font-family: var(--font-default);
+    background: var(--color-background);
+}
+/* min(min , max)  */
+/* clamp(min , iniail , max ) */
+.hero-banner h2 {
+    font-size: clamp(1.2em, 9vw, 3.5em);
+}
+p {
+    color: color-mix(in srgb, var(--color-default), transparent 25%);
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+.section-label {
+    padding: 10px 20px;
+    background: color-mix(in srgb, var(--color-accent), transparent 85%);
+    border-radius: var(--raduis-full);
+    width: fit-content;
+    margin-inline: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.section-label--sm {
+    font-weight: 500;
+    padding: 10px;
+    font-size: 0.8em;
+}
+.section-label--border-default {
+    border: 1px solid color-mix(in srgb, var(--color-accent), transparent 70%);
+}
+.section-icon {
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--raduis-sm);
+}
+.section-icon i {
+    font-size: 1.5em;
+}
+.section-icon-accent {
+    background: color-mix(in srgb, var(--color-accent), transparent 90%);
+    color: var(--color-accent);
+}
+.icon-default {
+    background: var(--color-accent);
+    color: var(--color-contrast);
+}
+
+.header-section{
+    max-width: 55%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    justify-content: center;
+    text-align: center;
+    @media (width<= 768px) {
+        max-width: 100%;
+    }
+}
+.hero-banner-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+}

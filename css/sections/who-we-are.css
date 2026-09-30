@@ -1,0 +1,191 @@
+.who-we-are {
+  background: var(--color-contrast);
+}
+
+.who-we-are h2 {
+  font-size: clamp(1.2em, 7vw, 2.25em);
+}
+.who-we-are-experience-top {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+
+  @media (width <= 1024px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media (width <= 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+.who-we-are-experience-top > div {
+  height: 450px;
+  border-radius: var(--raduis-md);
+  overflow: hidden;
+}
+.experience-top-image-lg {
+  grid-column: span 5;
+  @media (width <= 1024px) {
+    grid-column: span 3;
+  }
+  @media (width <= 768px) {
+    grid-column: auto;
+  }
+}
+.experience-top-image-md {
+  grid-column: span 4;
+  @media (width <= 1024px) {
+    grid-column: span 3;
+  }
+  @media (width <= 768px) {
+    grid-column: auto;
+  }
+}
+.experience-top-content {
+  grid-column: span 3;
+  background: var(--color-contrast);
+  box-shadow: var(--shadow-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-md);
+  @media (width <= 768px) {
+    grid-column: auto;
+  }
+}
+.who-we-are-experience-center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  @media (width <= 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (width <= 425px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.experience-result {
+  border: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+  padding: 20px;
+  border-radius: var(--raduis-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  text-align: center;
+}
+.experience-result:hover {
+  border-color: color-mix(in srgb, var(--color-default), transparent 80%);
+  box-shadow: 0 4px 12px
+    color-mix(in srgb, var(--color-default), transparent 90%);
+}
+.experience-result span:first-child {
+  font-weight: 600;
+  font-size: 2em;
+}
+.experience-result span:last-child {
+  color: color-mix(in srgb, var(--color-default), transparent 35%);
+}
+
+.who-we-are-experience-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  padding: 60px 0;
+
+  @media (width <= 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (width <= 425px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.who-we-are-bottom {
+  background: var(--color-contrast);
+  border: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+  padding: 24px;
+  border-radius: var(--raduis-md);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space-md);
+  box-shadow: 0 1px 3px
+    color-mix(in srgb, var(--color-default), transparent 92%);
+}
+.who-we-are-bottom:hover {
+  border-color: color-mix(in srgb, var(--color-default), transparent 80%);
+  box-shadow: 0 4px 12px
+    color-mix(in srgb, var(--color-default), transparent 90%);
+}
+.who-we-are-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--color-accent), transparent 90%);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.who-we-are-body h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.who-we-are-body p {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--color-default), transparent 30%);
+  line-height: 1.6;
+  margin: 0;
+}
+/*  */
+.we-are-end {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  padding: 60px 0;
+  @media (width <= 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (width <= 425px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.we-are-boxs {
+  min-height: 88px;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--color-contrast);
+  border: 1px solid color-mix(in srgb, var(--color-default), transparent 88%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.we-are-boxs:hover {
+  border-color: color-mix(in srgb, var(--color-default), transparent 80%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.we-are-boxs img {
+  max-width: 100%;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  opacity: 0.55;
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+}
+.we-are-boxs:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}

@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --color-header: #383838;
+  --color-default: #505050;
+  --color-accent: #011627;
+  --color-contrast: #fff;
+  --color-background: #f4f4f4;
+  /*  */
+  --background-color: #262626;
+  /* Typography */
+  --font-header: "Montserrat", sans-serif;
+  --font-default: "Roboto", sans-serif;
+  /* Spacing */
+  --space-sm: 0.5em;
+  --space-md: 1em;
+  --space-lg: 1.5em;
+  --space-xl: 3em;
+  /* Radius */
+  --raduis-sm: 8px;
+  --raduis-md: 10px;
+  --raduis-lg: 12px;
+  --raduis-full: 50px;
+  /* Shadow */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 1px 3px
+    color-mix(in srgb, var(--color-default), transparent 94%);
+  /* Container */
+  --container-padding: 20px;
+  --container-max-width: 1350px;
+  --container-padding-section: 3vw;
+
+  /* transition */
+  --transition-sm: 0.4s all ease;
+}

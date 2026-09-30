@@ -1,0 +1,329 @@
+.pricing {
+  padding: 60px 0;
+  background-color: var(--color-background);
+}
+
+.pricing .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing .section-title h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.pricing .section-title h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.pricing .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 1px;
+  background-color: color-mix(
+    in srgb,
+    var(--color-default),
+    transparent 70%
+  );
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing .section-title h2::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: var(--color-accent);
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.pricing .section-title p {
+  font-size: 14px;
+  color: color-mix(
+    in srgb,
+    var(--color-default),
+    transparent 30%
+  );
+}
+
+.pricing-toggle {
+  width: fit-content;
+  margin: 0 auto 55px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--color-contrast);
+  border: 1px solid
+    color-mix(in srgb, var(--color-default), transparent 88%);
+  border-radius: 7px;
+}
+
+.pricing-toggle .monthly {
+  color:
+    color-mix(in srgb, var(--color-default), transparent 35%);
+}
+
+.pricing-toggle .yearly {
+  font-weight: 500;
+}
+
+.save {
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid
+    color-mix(in srgb, var(--color-default), transparent 60%);
+  background-color:
+    color-mix(in srgb, var(--color-default), transparent 94%);
+  font-size: 12px;
+}
+
+.switch {
+  position: relative;
+  width: 55px;
+  height: 30px;
+  display: inline-block;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 4px;
+  top: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(25px);
+}
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pricing-card {
+  position: relative;
+  min-height: 675px;
+  padding: 34px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-contrast);
+  border: 1px solid
+    color-mix(in srgb, var(--color-default), transparent 88%);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: 0.3s;
+}
+.pricing-card:hover {
+   border-color: 
+ color-mix(in srgb, var(--color-default), transparent 80%);
+    box-shadow: 0 4px 12px 
+ color-mix(in srgb, var(--color-default), transparent 90%);
+}
+.pricing-card.recommended {
+  border-color:
+    color-mix(in srgb, var(--color-default), transparent 40%);
+}
+
+.recommended-badge {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  padding: 7px 16px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.pricing-label {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color:
+    color-mix(in srgb, var(--color-default), transparent 40%);
+  letter-spacing: 0.03em;
+}
+.pricing-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.currency {
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.pricing-price strong {
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 700;
+  color: #333;
+}
+
+.period {
+  margin-left: 8px;
+  font-size: 16px;
+  color:
+    color-mix(in srgb, var(--color-default), transparent 40%);
+}
+.pricing-description {
+  margin: 0;
+  min-height: 55px;
+  font-size: 16px;
+  line-height: 1.7;
+  color:
+    color-mix(in srgb, var(--color-default), transparent 35%);
+}
+.pricing-divider {
+  margin: 30px 0;
+  border-top: 1px solid
+    color-mix(in srgb, var(--color-default), transparent 90%);
+}
+.pricing-card h4 {
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color:
+    color-mix(in srgb, var(--color-default), transparent 20%);
+}
+
+.pricing-card li i {
+  font-size: 15px;
+}
+
+.pricing-card li.disabled {
+  color:
+    color-mix(in srgb, var(--color-default), transparent 55%);
+}
+
+.pricing-card li.disabled i {
+  color:
+    color-mix(in srgb, var(--color-default), transparent 55%);
+}
+.pricing-button {
+  margin-top: auto;
+  width: 100%;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid
+    color-mix(in srgb, var(--color-default), transparent 75%);
+  border-radius: 7px;
+  color: var(--color-default);
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing-button:hover {
+  background-color:
+    color-mix(in srgb, var(--color-default), transparent 95%);
+}
+
+.pricing-button.primary {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.pricing-button.primary:hover {
+  background-color: #222;
+}
+@media (width <= 1024px) and (min-width: 769px) {
+
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-card:last-child {
+    grid-column: span 2;
+  }
+
+}
+@media (width <= 768px) {
+
+  .pricing {
+    padding: 60px 0;
+  }
+
+  .pricing .section-title {
+    margin-bottom: 40px;
+  }
+
+  .pricing .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .pricing-toggle {
+    margin-bottom: 45px;
+
+    gap: 10px;
+    padding: 8px 12px;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .pricing-card {
+    min-height: auto;
+
+    padding: 30px 24px;
+  }
+
+  .pricing-price strong {
+    font-size: 48px;
+  }
+
+  .pricing-description {
+    min-height: auto;
+  }
+
+}

@@ -1,0 +1,50 @@
+.button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.button--default{
+    background: var(--color-accent);
+    color: var(--color-contrast);
+}
+.button--raduis-full {
+    border-radius: var(--raduis-full);
+}
+.button--sm{
+    padding: 10px 20px;
+}
+.button--lg {
+    padding: 20px 40px;
+}
+.button--ghost {
+    background-color: transparent;
+}
+.butto-video {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+.butto-video .btn-icon {
+    width: 2em;
+    height: 2em;
+    background: var(--color-contrast);
+    box-sizing: var(--shadow-md);
+    border-radius: var(--raduis-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-sm);
+}
+.butto-video:hover .btn-icon {
+    background: var(--color-accent);
+    color: var(--color-contrast);
+}
+.button-transform {
+    transition: var(--transition-sm);
+}
+.button-transform:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
