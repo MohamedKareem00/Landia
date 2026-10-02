@@ -19,7 +19,6 @@
     max-height: 350px;
     border-radius: var(--raduis-md);
     overflow: hidden;
-    background: red;
     position: relative;
 }
 .hero-service-card-layer {

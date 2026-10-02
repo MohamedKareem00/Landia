@@ -4,7 +4,6 @@ header {
     padding-block:20px ;
     top: 0;
     z-index: 10;
-    /* background: red; */
 }
 header .container { 
     background: var(--color-contrast);
